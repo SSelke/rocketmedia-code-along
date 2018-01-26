@@ -53,7 +53,7 @@ button:hover{
 	color: #fff;
 }
 
-.content{
+.container{
 	width: 450px;
 	height: 160px;
 	border: 1px solid #dfdfe1;
@@ -96,7 +96,7 @@ button:hover{
   	margin: 15px;
 }
 
-.wrapper-outer{
+.content-wrapper-outer{
 	float: right;
 	color: #1c2455;
 	top: 0;
@@ -131,7 +131,7 @@ button:hover{
     	width: 135px;
     }
 
-    .content{
+    .container{
     	width: 225px;
     	height: 175px
     }
@@ -145,7 +145,7 @@ button:hover{
 	  	margin: 10px 5px;
 	}
 
-    .wrapper-inner{
+    .content-wrapper-inner{
     	top: 0;
     	height: 100%;
     	width: 130px;
