@@ -1,0 +1,135 @@
+/*Button:hover color = #1c2455*/
+/*HR color = #dcdbe1 or opacity?*/
+/*Border color = #dfdfe1*/
+/**/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+img{
+	border: 1px solid #000;
+	border-radius: 50%;
+	float: left;
+	margin: 15px 15px 15px 15px;
+	width: 110px;
+	height: 110px;
+}
+
+hr{
+	margin: 20px 0 10px 0;
+	width: 35%;
+	opacity: 0.5;
+}
+
+h4{
+	margin: 6px 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+p{
+	margin-bottom: 12px;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+button{
+	border: 0.5px solid #000;
+	background: none;
+	padding: 13px 25px;
+	width: 160px;
+	font-size: 8px;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+}
+
+button:hover{
+	background: #1c2455;
+	color: #fff;
+}
+
+.content{
+	width: 450px;
+	height: 160px;
+	border: 1px solid #dfdfe1;
+	border-radius: 5px;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.07),
+				-4px 0px 2px rgba(0, 0, 0, 0.05),
+				-8px 0px 8px rgba(0, 0, 0, 0.01),
+				 0px 2px 2px rgba(0, 0, 0, 0.07),
+				 0px 4px 2px rgba(0, 0, 0, 0.05),
+				 0px 8px 8px rgba(0, 0, 0, 0.01);
+	box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.07),
+				-4px 0px 2px rgba(0, 0, 0, 0.05),
+				-8px 0px 8px rgba(0, 0, 0, 0.01),
+				 0px 2px 2px rgba(0, 0, 0, 0.07),
+				 0px 4px 2px rgba(0, 0, 0, 0.05),
+				 0px 8px 8px rgba(0, 0, 0, 0.01);
+}
+
+.wrapper-image{
+	float: left;
+	width: 32%;
+	height: 100%;
+}
+
+.wrapper-outer{
+	float: right;
+	text-align: left; /*For IE and Edge*/ 
+	color: #1c2455;
+	top: 0;
+	width: 68%;
+	height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    
+    img{
+    	width: 55px;
+    	height: 55px;
+    	margin: 10px 5px;
+    }
+
+    hr{
+    	margin: 0;
+    	width: 130px;
+    }
+
+    h4{
+    	font-size: 14px;
+    }
+
+    p{
+    	line-height: 1.5;
+    	font-weight: 500;
+    }
+
+    button{
+    	padding: 10px 25px;
+    	width: 135px;
+    }
+
+    .content{
+    	width: 225px;
+    	height: 175px
+    }
+
+    .wrapper-inner{
+    	top: 0;
+    	height: 100%;
+    	width: 130px;
+    	margin: 15px 5px;
+    }
+}
