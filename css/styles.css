@@ -10,17 +10,19 @@
 }
 
 img{
-	border: 1px solid #000;
-	border-radius: 50%;
-	float: left;
-	margin: 15px 15px 15px 15px;
-	width: 110px;
-	height: 110px;
+	display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-45%) translateY(-55%) scale(0.7);
+        -ms-transform: translateX(-45%) translateY(-55%) scale(0.7);
+            transform: translateX(-45%) translateY(-55%) scale(0.7);
 }
 
 hr{
 	margin: 20px 0 10px 0;
 	width: 35%;
+	text-align: left; /*For IE and Edge*/ 
 	opacity: 0.5;
 }
 
@@ -66,28 +68,36 @@ button:hover{
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	-webkit-box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.07),
-				-4px 0px 2px rgba(0, 0, 0, 0.05),
-				-8px 0px 8px rgba(0, 0, 0, 0.01),
-				 0px 2px 2px rgba(0, 0, 0, 0.07),
-				 0px 4px 2px rgba(0, 0, 0, 0.05),
-				 0px 8px 8px rgba(0, 0, 0, 0.01);
-	box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.07),
-				-4px 0px 2px rgba(0, 0, 0, 0.05),
-				-8px 0px 8px rgba(0, 0, 0, 0.01),
-				 0px 2px 2px rgba(0, 0, 0, 0.07),
-				 0px 4px 2px rgba(0, 0, 0, 0.05),
-				 0px 8px 8px rgba(0, 0, 0, 0.01);
+				        -4px 0px 2px rgba(0, 0, 0, 0.05),
+				        -8px 0px 8px rgba(0, 0, 0, 0.01),
+				         0px 2px 2px rgba(0, 0, 0, 0.07),
+				         0px 4px 2px rgba(0, 0, 0, 0.05),
+				         0px 8px 8px rgba(0, 0, 0, 0.01);
+	        box-shadow: -2px 0px 2px rgba(0, 0, 0, 0.07),
+				        -4px 0px 2px rgba(0, 0, 0, 0.05),
+				        -8px 0px 8px rgba(0, 0, 0, 0.01),
+				         0px 2px 2px rgba(0, 0, 0, 0.07),
+				         0px 4px 2px rgba(0, 0, 0, 0.05),
+				         0px 8px 8px rgba(0, 0, 0, 0.01);
 }
 
-.wrapper-image{
+.wrapper{
 	float: left;
 	width: 32%;
 	height: 100%;
 }
 
+.wrapper-image{
+	border-radius: 50%;
+ 	overflow: hidden;
+ 	width: 110px;
+ 	height: 110px;
+  	border: 1px solid #000;
+  	margin: 15px;
+}
+
 .wrapper-outer{
 	float: right;
-	text-align: left; /*For IE and Edge*/ 
 	color: #1c2455;
 	top: 0;
 	width: 68%;
@@ -95,16 +105,16 @@ button:hover{
 }
 
 @media screen and (max-width: 600px) {
-    
-    img{
-    	width: 55px;
-    	height: 55px;
-    	margin: 10px 5px;
-    }
+
+	img{
+		-webkit-transform: translateX(-46%) translateY(-52%) scale(0.3);
+		    -ms-transform: translateX(-46%) translateY(-52%) scale(0.3);
+		        transform: translateX(-46%) translateY(-52%) scale(0.3);
+	}
 
     hr{
     	margin: 0;
-    	width: 130px;
+    	width: 100%;
     }
 
     h4{
@@ -125,6 +135,15 @@ button:hover{
     	width: 225px;
     	height: 175px
     }
+
+    .wrapper-image{
+		border-radius: 50%;
+	 	overflow: hidden;
+	 	width: 55px;
+	 	height: 55px;
+	  	border: 1px solid #000;
+	  	margin: 10px 5px;
+	}
 
     .wrapper-inner{
     	top: 0;
